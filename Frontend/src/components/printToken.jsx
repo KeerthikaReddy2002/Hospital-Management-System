@@ -18,7 +18,7 @@ function PrintToken() {
         document.body.innerHTML = printContents;
         window.print(printContents);
         document.body.innerHTML = originalContents;
-        window.location.reload(false);
+        window.location.reload(true);
     }
 
     return (
