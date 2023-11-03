@@ -1,0 +1,21 @@
+html,body {
+    height: 100%;
+    margin: auto;
+    background-color: #1D2656;
+  }
+  .home
+  {
+      background-color: #1D2656;
+  }
+  .hospitalName
+  {
+      color: #9B6268;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 8px;
+      margin: 0;
+  }
