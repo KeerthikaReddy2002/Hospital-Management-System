@@ -49,7 +49,7 @@ function GenerateToken() {
                 return;
             }
 
-            axios.post("http://localhost:8000/patientInfo", patientInfo)
+            axios.post("https://raja-hospital.onrender.com/patientInfo", patientInfo)
                 .then(response => {
                     alert(response.data.message);
                     navigate("/TokenView", { state: { id: response.data.id, firstName: response.data.firstName, doctorName: response.data.doctorName, token: response.data.token } });

@@ -8,7 +8,7 @@ function PatientDetails() {
 
     const [data, setData] = useState([]);
     const getData = async () => {
-        const info = await axios.get("http://localhost:8000/patientDetails");
+        const info = await axios.get("https://raja-hospital.onrender.com/patientDetails");
         // console.log(info.data);
         setData(data => [...data, info.data]);
     };
@@ -42,7 +42,7 @@ function PatientDetails() {
             return;
         }
         try {
-            axios.post("http://localhost:8000/patientDetailsFilter", filterInfo)
+            axios.post("https://raja-hospital.onrender.com/patientDetailsFilter", filterInfo)
                 .then(response => {
                     setData(data => [...data, response.data.patientInfo]);
                     info = [];

@@ -21,7 +21,7 @@ function TokenView() {
     const navigate = useNavigate();
     const handleClick = () => {
         try {
-            axios.post("http://localhost:8000/tokenInfo", { id: id })
+            axios.post("https://raja-hospital.onrender.com/tokenInfo", { id: id })
                 .then(response => {
                     alert(response.data.message);
                     // console.log(response.data.patientInfo);
