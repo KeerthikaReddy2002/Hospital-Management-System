@@ -99,7 +99,7 @@ function PatientDetails() {
                     </div>
                     <div className="col">
                         <Form.Group >
-                            <Form.Label>Filter First Name</Form.Label>
+                            <Form.Label>Filter Phone number</Form.Label>
                             <Form.Control onChange={handleChange} type="text" name="mobile" className="form-control" placeholder="Enter Mobile Number" minLength={10} maxLength={10} />
                         </Form.Group>
                     </div>
@@ -143,6 +143,7 @@ function PatientDetails() {
                     {info}
                 </tbody>
             </table>
+            <br></br><br></br>
         </div>
     );
 }
