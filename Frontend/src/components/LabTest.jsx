@@ -46,7 +46,7 @@ function LabTest() {
         SingleXPose: false,
     });
     const getData = async () => {
-        const info = await axios.get("http://localhost:8000/patientDetails");
+        const info = await axios.get("https://raja-hospital.onrender.com/patientDetails");
         // console.log(info.data.patientInfo);
         setData(data => [...data, info.data]);
     };
@@ -71,7 +71,7 @@ function LabTest() {
             alert("Please select a patient");
             return;
         }
-        axios.post("http://localhost:8000/labDetails", tests)
+        axios.post("https://raja-hospital.onrender.com/labDetails", tests)
             .then(res => {
                 alert(res.data.message);
                 // console.log(res.data.total)
